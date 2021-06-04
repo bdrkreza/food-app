@@ -1,0 +1,42 @@
+export default [
+    {
+        name: 'The Muffin Man Bakery',
+        categories: 'Desserts, Cakes and Bakery',
+        deliveryTime: '35 min',
+        distance: '3.7 km',
+        image: require('../../assets/images/the-muffin-man-bakery.jpg'),
+        id: 1,
+    },
+    {
+        name: 'Central Perk Coffee House',
+        categories: 'Beverages, Desserts, Cakes and Bakery',
+        deliveryTime: '45 min',
+        distance: '4.3 km',
+        image: require('../../assets/images/central-perk.jpg'),
+        id: 2,
+    },
+    {
+        name: 'WildBread Bakery',
+        categories: 'Cakes and Bakery, American, Sandwiches, Burgers',
+        deliveryTime: '25 min',
+        distance: '3 km',
+        image: require('../../assets/images/wildbread-bakery.jpg'),
+        id: 3,
+    },
+    {
+        name: "McDonald's",
+        categories: 'Fast Food, Burgers, Desserts',
+        deliveryTime: '20 min',
+        distance: '2.5 km',
+        image: require('../../assets/images/mcdo.jpg'),
+        id: 4,
+    },
+    {
+        name: 'Jollibee',
+        categories: 'Fast Food, Burgers, Desserts',
+        deliveryTime: '25 min',
+        distance: '3.1 km',
+        image: require('../../assets/images/jollibee.jpg'),
+        id: 5,
+    },
+];
