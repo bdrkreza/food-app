@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
-
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import colorCollection from '../../assets/Colors/Colors';
 
 const FoodCard = ({ info }) => {
     const { name, categories, image } = info;
@@ -9,9 +10,18 @@ const FoodCard = ({ info }) => {
         <View style={styles.container}>
             <View style={styles.cardContainer}>
                 <Image style={styles.imageStyle} source={image} />
+
                 <View style={styles.infoStyle}>
+
                     <Text style={styles.titleStyle}>{name}</Text>
-                    <Text style={styles.categoryStyle}>{categories}</Text>
+                    <View style={styles.btn}>
+                        <Text style={styles.categoryStyle}>{categories}
+                        </Text>
+                        <View style={styles.addToCartBtn}>
+                            <Icon name="add" size={20} color={colorCollection.white} />
+                        </View>
+                    </View>
+
                 </View>
             </View>
         </View>
@@ -66,6 +76,19 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 10,
     },
+    addToCartBtn: {
+        height: 40,
+        width: 40,
+        borderRadius: 20,
+        backgroundColor: colorCollection.primary,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: "360px",
+    },
+    btn: {
+        display: 'flex',
+        justifyContent: "space-evenly"
+    }
 });
 
 export default FoodCard;

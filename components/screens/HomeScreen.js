@@ -5,14 +5,14 @@ import Header from '../Header/Header';
 import infoData from '../../assets/data/infoData'
 import { FlatList } from 'react-native';
 
+
 const HomeScreen = () => {
 
     return (
-        <div>
+        <>
             <View style={styles.container}>
-
+                <Header />
                 <StatusBar barStyle="dark-content" />
-
                 <FlatList
                     data={infoData}
                     renderItem={({ item }) => {
@@ -22,7 +22,7 @@ const HomeScreen = () => {
                     showsVerticalScrollIndicator={false}
                 />
             </View>
-        </div>
+        </>
     );
 };
 
